@@ -1,0 +1,59 @@
+@import "./styles/variables.scss";
+@import "./fonts/stylesheet.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+
+    &_input {
+        color: green;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    &_radio {
+        color: green;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    &_checkbox {
+        color: green;
+        font-size: 5rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@import "./styles/forms.scss";
+@import "./styles/button.scss";
+@import "./styles/picker.scss";
+@import "./styles/tabBar.scss";
+@import "./styles/tip.scss";
+@import "./styles/snackbar.scss";
+@import "./styles/navigation.scss";
+@import "./styles/switch.scss";

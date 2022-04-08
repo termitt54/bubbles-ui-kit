@@ -1,0 +1,128 @@
+/* fonts */
+
+$font-size_1: 11px;
+$font-size_2: 12px;
+$font-size_3: 13px;
+$font-size_4: 15px;
+$font-size_5: 16px;
+$font-size_6: 17px;
+$font-size_7: 20px;
+$font-size_8: 22px;
+$font-size_9: 28px;
+$font-size_10: 34px;
+
+$font-size_11: 14px;
+$font-size_12: 18px;
+
+$font-weight_1: 400;
+$font-weight_2: 500;
+$font-weight_3: 600;
+$font-weight_4: 700;
+
+$font-family: 'SF Pro Display' , serif;
+
+/* -------- */
+
+/*                  colors                       */
+
+/* colors in project */
+
+$black: rgba(0, 0, 0, 1);
+$medium-black: rgba(0, 0, 0, 0.3);
+$light-black: rgba(0, 0, 0, 0.1);
+$white: rgba(255, 255, 255, 1);
+$opac-white: rgba(255, 255, 255, 0.5);
+$primary: rgba(45, 116, 255, 0.15);
+$blue: rgba(45, 116, 255, 1);
+$default: rgba(234, 237, 243, 1);
+$gray: rgba(150, 166, 194, 1);
+$light-gray: rgba(150, 166, 194, 0.2);
+$medium-gray: rgba(150, 166, 194, 0.4);
+$dark-gray: rgba(62, 62, 62, 1);
+$error: rgba(255, 45, 45, 0.1);
+$red: rgba(255, 45, 45, 1);
+$color-title: rgba(54, 70, 99, 1);
+$dark: rgba(38, 38, 38, 1);
+$dark-theme: rgba(34, 34, 34, 1);
+$bgcolor-nav: rgba(235, 237, 240, 1);
+$default-load: rgba(255, 255, 255, 0.05);
+$light-load: rgba(249, 251, 255, 1);
+$dark-load: rgba(46, 46, 46, 1);
+
+/* default */
+
+/* light colors */
+
+$red_light_default: rgba(255, 59, 48, 1);
+$orange_light_default: rgba(255, 149, 0, 1);
+$yellow_light_default: rgba(255, 204, 0, 1);
+$green_light_default: rgba(52, 199, 89, 1);
+$teal_light_default: rgba(90, 200, 250, 1);
+$blue_light_default: rgba(0, 122, 255, 1);
+$indigo_light_default: rgba(88, 86, 214, 1);
+$purple_light_default: rgba(175, 82, 222, 1);
+$pink_light_default: rgba(255, 45, 85, 1);
+$gray_light_default_1: rgba(142, 142, 147, 1);
+$gray_light_default_2: rgba(174, 174, 178, 1);
+$gray_light_default_3: rgba(199, 199, 204, 1);
+$gray_light_default_4: rgba(209, 209, 214, 1);
+$gray_light_default_5: rgba(229, 229, 234, 1);
+$gray_light_default_6: rgba(242, 242, 247, 1);
+
+/* dark colors */ 
+
+$red_dark_default: rgba(255, 69, 58, 1);
+$orange_dark_default: rgba(255, 159, 10, 1);
+$yellow_dark_default: rgba(255, 214, 10, 1);
+$green_dark_default: rgba(50, 215, 75, 1);
+$teal_dark_default: rgba(100, 210, 255, 1);
+$blue_dark_default: rgba(10, 132, 255, 1);
+$indigo_dark_default: rgba(94, 92, 230, 1);
+$purple_dark_default: rgba(191, 90, 242, 1);
+$pink_dark_default: rgba(255, 45, 85, 1);
+$gray_dark_default_1: rgba(142, 142, 147, 1);
+$gray_dark_default_2: rgba(99, 99, 102, 1);
+$gray_dark_default_3: rgba(72, 72, 74, 1);
+$gray_dark_default_4: rgba(58, 58, 60, 1);
+$gray_dark_default_5: rgba(28, 28, 30, 1);
+$gray_dark_default_6: rgba(28, 28, 30, 1);
+
+/* ------ */
+
+/* Accessible */
+
+/* light colors */
+
+$red_light_accessible: rgba(215, 0, 21, 1);
+$orange_light_accessible: rgba(201, 52, 0, 1);
+$yellow_light_accessible: rgba(178, 80, 0, 1);
+$green_light_accessible: rgba(36, 138, 61, 1);
+$teal_light_accessible: rgba(0, 113, 164, 1);
+$blue_light_accessible: rgba(0, 64, 221, 1);
+$indigo_light_accessible: rgba(54, 52, 163, 1);
+$purple_light_accessible: rgba(137, 68, 171, 1);
+$pink_light_accessible: rgba(211, 15, 69, 1);
+$gray_light_accessible_1: rgba(108, 108, 112, 1);
+$gray_light_accessible_2: rgba(142, 142, 147, 1);
+$gray_light_accessible_3: rgba(174, 174, 178, 1);
+$gray_light_accessible_4: rgba(188, 188, 192, 1);
+$gray_light_accessible_5: rgba(216, 216, 220, 1);
+$gray_light_accessible_6: rgba(235, 235, 240, 1);
+
+/* dark colors */ 
+
+$red_dark_accessible: rgba(255, 105, 97, 1);
+$orange_dark_accessible: rgba(255, 179, 64, 1);
+$yellow_dark_accessible: rgba(255, 212, 38, 1);
+$green_dark_accessible: rgba(48, 219, 91, 1);
+$teal_dark_accessible: rgba(112, 215, 255, 1);
+$blue_dark_accessible: rgba(64, 156, 255, 1);
+$indigo_dark_accessible: rgba(125, 122, 255, 1);
+$purple_dark_accessible: rgba(218, 143, 255, 1);
+$pink_dark_accessible: rgba(255, 100, 130, 1);
+$gray_dark_accessible_1: rgba(174, 174, 178, 1);
+$gray_dark_accessible_2: rgba(124, 124, 128, 1);
+$gray_dark_accessible_3: rgba(84, 84, 86, 1);
+$gray_dark_accessible_4: rgba(68, 68, 70, 1);
+$gray_dark_accessible_5: rgba(54, 54, 56, 1);
+$gray_dark_accessible_6: rgba(36, 36, 38, 1);

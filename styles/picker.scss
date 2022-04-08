@@ -1,0 +1,73 @@
+.picker {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.picker__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    width: 115rem;
+    height: 64.2rem;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 6.4rem 20.6rem;
+}
+
+.picker__field {
+    display: flex;
+    flex-direction: column;
+    width: 34.3rem;
+    row-gap: 1.4rem;
+}
+
+.picker__field-wrapper {
+    display: flex;
+    width: 34.3rem;
+    height: 3.2rem;
+    background-color: $light-gray;
+    border-radius: 1rem;
+    padding: 0.2rem;
+}
+
+.picker__field-wrapper-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size_3;
+    width: 100%;
+    max-width: 17.3rem;
+    border-radius: 1rem;
+    color: $gray;
+    cursor: pointer;
+
+    &:not(.item_checked):not(:first-child)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0.8rem;
+        left: -0.2rem;
+        width: 0.1rem;
+        height: 1.5rem;
+        background-color: $medium-gray;
+        z-index: 1;
+    }
+}
+
+
+
+.item_checked {
+    color: $white;
+    background-color: $blue;
+    font-weight: 600;
+    z-index: 2;
+}

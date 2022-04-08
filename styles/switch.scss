@@ -1,0 +1,68 @@
+.switch {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.switch__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    width: 15.3rem;
+    height: 12.3rem;
+    border: 1px solid $black;
+    border-radius: 1.6rem;
+    padding: 2rem 1.6rem;
+}
+
+.switch__field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7em;
+}
+
+.switch__field-label {
+    width: 5.1rem;
+    height: 3.1rem;
+}
+
+.switch__field-span {
+    position: relative;
+    display: block;
+    width: 5.1rem;
+    height: 3.1rem;
+    background-color: $default;
+    border-radius: 2rem;
+    transition: 0.5s;
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: .2rem;
+        left: .2rem;
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        background-color: $white;
+        transition: 0.5s;
+    }
+}
+
+.switch__field-checkbox:checked ~ .switch__field-span {
+    background-color: $blue;
+    
+}
+
+.switch__field-checkbox:disabled ~ .switch__field-span {
+    opacity: 0.5;
+}
+
+.switch__field-checkbox:checked ~ .switch__field-span::before {
+    transform: translateX(2rem);
+}
+
+.switch__field-checkbox {
+    display: none;
+}
