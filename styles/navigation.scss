@@ -1,16 +1,10 @@
-.navigation {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-}
-
-.navigation__list {
-    display: flex;
-    flex-wrap: wrap;
+.menu {
     width: 100%;
     max-width: 169.5rem;
-    min-height: 134.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
     background-color: $bgcolor-nav;
     border: 1px solid $black;
     border-radius: 1rem;
@@ -18,48 +12,49 @@
     gap: 2rem;
 }
 
-.navigation__field {
+.navigation {
     width: 100%;
     max-width: 34.2rem;
     height: 25.2rem;
     background-color: $white;
     border-radius: 1.2rem;
 
-    &-item {
+    &__item {
         display: flex;
         align-items: center;
+        cursor: pointer;
         width: 100%;
         height: 5rem;
         padding: 1.2rem 1.4rem 1.2rem 1.7rem;
+
+        &_active {
+            background-color: $primary;
+            font-weight: 510;
+        }
     }
 
-    &-item-image {
+    &__item-image {
         width: 1.8rem;
         height: 1.8rem;
         margin-right: 1.1rem;
     }
 
-    &-item-name {
+    &__item-name {
         font-size: $font-size_5;
     }
 
-    &-item-icon {
+    &__item-icon {
         margin-left: auto;
     }
 }
 
-.checked {
-    background-color: $primary;
-    font-weight: 510;
-}
-
-.navigation__field:first-child .navigation__field-item,
-.navigation__field:nth-child(2) .navigation__field-item,
-.navigation__field:nth-child(9) .navigation__field-item,
-.navigation__field:nth-child(10) .navigation__field-item {
+.navigation:first-child .navigation__item,
+.navigation:nth-child(2) .navigation__item,
+.navigation:nth-child(9) .navigation__item,
+.navigation:nth-child(10) .navigation__item {
     position: relative;
 
-    &:not(:last-child):not(.checked):before {
+    &:not(:last-child):not(.navigation__item_active):before {
         content: '';
         display: block;
         position: absolute;
@@ -71,13 +66,13 @@
     }
 }
 
-.navigation__field:nth-child(5) .navigation__field-item,
-.navigation__field:nth-child(6) .navigation__field-item,
-.navigation__field:nth-child(13) .navigation__field-item,
-.navigation__field:nth-child(14) .navigation__field-item {
+.navigation:nth-child(5) .navigation__item,
+.navigation:nth-child(6) .navigation__item,
+.navigation:nth-child(13) .navigation__item,
+.navigation:nth-child(14) .navigation__item {
     position: relative;
 
-    &:not(:last-child):not(.checked)::before {
+    &:not(:last-child):not(.navigation__item_active)::before {
         content: '';
         display: block;
         position: absolute;

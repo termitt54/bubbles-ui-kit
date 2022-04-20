@@ -1,5 +1,5 @@
 @import "./styles/variables.scss";
-@import "./fonts/stylesheet.css";
+@import "./styles/fonts.scss";
 
 * {
     box-sizing: border-box;
@@ -23,33 +23,36 @@ body {
 }
 
 .title {
-    font-size: 8rem;
+    font-size: $font-size_14;
     font-weight: 700;
     text-align: center;
 
     &_input {
         color: green;
-        font-size: 5rem;
+        font-size: $font-size_13;
         line-height: 5rem;
         margin-bottom: 2rem;
     }
 
     &_radio {
         color: green;
-        font-size: 5rem;
+        font-size: $font-size_13;
         line-height: 5rem;
         margin-bottom: 2rem;
     }
 
     &_checkbox {
         color: green;
-        font-size: 5rem;
+        font-size: $font-size_13;
         line-height: 5rem;
         margin-bottom: 2rem;
     }
 }
 
 @import "./styles/forms.scss";
+@import "./styles/input.scss";
+@import "./styles/radio.scss";
+@import "./styles/checkbox.scss";
 @import "./styles/button.scss";
 @import "./styles/picker.scss";
 @import "./styles/tabBar.scss";

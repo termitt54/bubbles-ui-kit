@@ -1,0 +1,151 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 34.3rem;
+
+  &__label {
+    font-size: $font-size_11;
+    color: $blue;
+  }
+
+  &__field {
+    width: 100%;
+    max-width: 34.3rem;
+    min-height: 4.4rem;
+    font-size: $font-size_5;
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+    background-color: $default;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__mistake {
+    font-size: $font-size_11;
+  }
+
+  &_primary {
+    .input__field {
+      background-color: $primary;
+      color: rgba(45, 116, 255, 1);
+
+      &::placeholder {
+        color: $color-title;
+      }
+    }
+  }
+
+  &_error {
+    .input__label {
+      color: $red;
+    }
+
+    .input__field {
+      background-color: $error;
+      color: $red;
+
+      &::placeholder {
+        color: $red;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    .input__icon {
+      position: absolute;
+      top: 1.33rem;
+      left: 1.42rem;
+    }
+
+    .input__field {
+      padding-left: 3.8rem;
+    }
+
+    .input__arrow {
+      position: absolute;
+      top: 1.7rem;
+      right: 1.7rem;
+      width: 100%;
+      max-width: 1.6rem;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    max-width: 34.3rem;
+    min-height: 4.4rem;
+    font-size: $font-size_5;
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+    background-color: $default;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_active {
+    .input__select {
+      background-color: $primary;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 1.7rem;
+    right: 1.7rem;
+    width: 100%;
+    max-width: 1.6rem;
+  }
+
+  &__dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: $default;
+    width: 34.3rem;
+    height: 13.2rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    padding: 0 1.2rem;
+  }
+
+  &__dropdown-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: $font-size_5;
+    height: 5rem;
+    padding: 1rem 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+
+  &__dropdown-item-icon {
+    position: absolute;
+    top: 1.33rem;
+    left: 0.22rem;
+  }
+
+  &__dropdown-item-name {
+    margin-left: 2.6rem;
+  }
+
+  &_disabled {
+    opacity: 0.5;
+  }
+
+  &__row {
+    .input__select {
+        padding-left: 3.8rem;
+      } 
+  }
+}

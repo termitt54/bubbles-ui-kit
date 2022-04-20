@@ -1,0 +1,135 @@
+.checkbox__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5rem;
+  column-gap: 7rem;
+}
+
+.checkbox__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 34.3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  &:nth-child(2) {
+    .checkbox__decorator {
+      margin-left: 0;
+      margin-right: 0.8rem;
+    }
+  }
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 34.3rem;
+  height: 3.2rem;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.4rem;
+    margin-right: 0.4rem;
+    background-color: $default;
+  }
+
+  &__label {
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    font-size: $font-size_12;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__decorator {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    border: 2px solid $gray;
+    border-radius: 0.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    transition: 0.3s;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      top: 0.5rem;
+      left: 0.3rem;
+      width: 2rem;
+      height: 2rem;
+      background: url("./assets/icon/check.svg");
+      background-repeat: no-repeat;
+      opacity: 0;
+
+      transition: 0.3s ease;
+    }
+  }
+}
+
+.checkbox__button:checked ~ .checkbox__decorator {
+  border-color: $blue;
+  background-color: $blue;
+}
+
+.checkbox__button:disabled ~ .checkbox__label-text,
+.checkbox__button:disabled ~ .checkbox__decorator {
+  opacity: 0.5;
+}
+
+.checkbox__button:checked ~ .checkbox__decorator::before {
+  opacity: 1;
+}
+
+.checkbox__list-default {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 10.6rem;
+  height: 10.6rem;
+  border: 1px dashed $blue;
+  border-radius: 1.6rem;
+  padding: 2rem;
+  gap: 2rem;
+
+  .checkbox {
+    &__button {
+      display: none;
+    }
+
+    &__decorator {
+      position: relative;
+      display: block;
+      border: 2px solid $gray;
+      border-radius: 0.6rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      transition: 0.3s;
+
+      &::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 0.5rem;
+        left: 0.3rem;
+        width: 2rem;
+        height: 2rem;
+        background: url("./assets/icon/check.svg");
+        background-repeat: no-repeat;
+        opacity: 0;
+
+        transition: 0.3s ease;
+      }
+    }
+  }
+}
