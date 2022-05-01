@@ -1,0 +1,190 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  &__input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 115rem;
+    height: 174.9rem;
+    padding: 48px 34px 48px 45px;
+    border: 0.1rem solid $black;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    column-gap: 2rem;
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 115rem;
+    height: 64.5rem;
+    padding: 7.5rem 19.2rem;
+    border: 0.1rem solid $black;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &__checkbox {
+    width: 100%;
+    max-width: 115rem;
+    height: 64.5rem;
+    padding: 7.5rem 19.2rem;
+    border: 0.1rem solid $black;
+    border-radius: 1rem;
+  }
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    width: 137.8rem;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 8rem 6.7rem;
+    column-gap: 4rem;
+    row-gap: 3rem;
+
+    &_mini {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      width: 137.8rem;
+      height: 40.5rem;
+      border: 1px solid $black;
+      border-radius: 1rem;
+      padding: 8.2rem 40rem;
+      column-gap: 4rem;
+    }
+  }
+}
+
+.menu {
+  width: 100%;
+  max-width: 169.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+  background-color: $bgcolor-nav;
+  border: 1px solid $black;
+  border-radius: 1rem;
+  padding: 12rem 10.3rem;
+  gap: 2rem;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  max-width: 137.8rem;
+  height: 109rem;
+  border: 1px solid $black;
+  border-radius: 1rem;
+  padding: 12.8rem 32.2rem;
+  gap: 4rem;
+  margin: auto;
+}
+
+.last {
+  width: 100%;
+  max-width: 15.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border: 1px solid $black;
+  border-radius: 1.6rem;
+  padding: 2rem 1.6rem;
+  gap: 1.7em;
+  margin: auto;
+}
+
+.tab {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid $black;
+  border-radius: 1rem;
+  padding: 6.8rem 18rem;
+  row-gap: 2rem;
+  column-gap: 3.8rem;
+  margin-bottom: 3rem;
+}
+
+.tip {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 137.8rem;
+    height: 56.7rem;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 8.2rem 17.3rem;
+    gap: 2rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 34.3rem;
+    height: 17rem;
+    gap: 1.8rem;
+
+    &_small {
+      width: 29rem;
+      row-gap: 0;
+
+      .tooltip__image {
+        width: 3.8rem;
+      }
+    }
+
+    &_dark {
+      .tooltip {
+        background-color: $dark;
+
+        &__text-title {
+          color: $white;
+        }
+
+        &__text-subtitle {
+          color: $opac-white;
+        }
+
+        &__image {
+          background-color: $dark-gray;
+        }
+
+        &::before {
+          border-bottom: 1rem solid $dark;
+        }
+      }
+    }
+  }
+}

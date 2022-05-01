@@ -1,77 +1,19 @@
-.tip {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
-
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 137.8rem;
-    height: 56.7rem;
-    border: 1px solid $black;
-    border-radius: 1rem;
-    padding: 8.2rem 17.3rem;
-    gap: 2rem;
-  }
-
-  &__field {
-    display: flex;
-    flex-wrap: wrap;
-    width: 34.3rem;
-    height: 17rem;
-    gap: 1.8rem;
-
-    &_small {
-      width: 29rem;
-      row-gap: 0;
-
-      .tooltip__image {
-        width: 3.8rem;
-      }
-    }
-
-    &_dark {
-      .tooltip {
-        background-color: $dark;
-
-        &__text-title {
-          color: $white;
-        }
-
-        &__text-subtitle {
-          color: $opac-white;
-        }
-
-        &__image {
-          background-color: $dark-gray;
-        }
-
-        &::before {
-          border-bottom: 1rem solid $dark;
-        }
-
-        &:first-child::before,
-        &:nth-child(2)::before {
-          border-bottom: 1rem solid $dark;
-        }
-
-        &:nth-child(3)::before,
-        &:last-child::before {
-          border-bottom: 1rem solid $dark;
-        }
-      }
-    }
-  }
-}
-
 .tooltip {
+  position: relative;
   display: flex;
   background-color: $white;
   box-shadow: 0 0 15px $light-black;
   border-radius: 0.8rem;
   padding: 0.8rem 1.48rem 0.8rem 1em;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateX(-50%);
+    border: 1rem solid transparent;
+    border-bottom: 1rem solid $white;
+  }
 
   &_small {
     display: flex;
@@ -85,32 +27,17 @@
     max-height: 7.8rem;
   }
 
-  &_position-bottomLeft {
-    position: relative;
-
+  &_position_bottomLeft {
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
       top: -1.8rem;
-      left: 1.9rem;
-      border: 1rem solid transparent;
-      border-bottom: 1rem solid $white;
+      left: 2.9rem;
     }
   }
 
-  &_position-bottomCenter {
-    position: relative;
-
+  &_position_bottomCenter {
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
       top: -1.8rem;
       left: 50%;
-      transform: translateX(-50%);
-      border: 1rem solid transparent;
-      border-bottom: 1rem solid $white;
     }
   }
 

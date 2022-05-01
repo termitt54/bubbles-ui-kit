@@ -23,33 +23,43 @@ body {
 }
 
 .title {
+    color: $color-title;
     font-size: $font-size_14;
     font-weight: 700;
     text-align: center;
 
     &_input {
-        color: green;
+        color: $color-title;
         font-size: $font-size_13;
         line-height: 5rem;
         margin-bottom: 2rem;
+        border: none;
     }
 
     &_radio {
-        color: green;
+        color: $color-title;
         font-size: $font-size_13;
         line-height: 5rem;
         margin-bottom: 2rem;
+        border: none;
     }
 
     &_checkbox {
-        color: green;
+        color: $color-title;
         font-size: $font-size_13;
         line-height: 5rem;
         margin-bottom: 2rem;
+        border: none;
+    }
+
+    &_menu {
+        position: relative;
+        bottom: -9.7rem;
+        background-color: $bgcolor-nav;
     }
 }
 
-@import "./styles/forms.scss";
+@import "./styles/section.scss";
 @import "./styles/input.scss";
 @import "./styles/radio.scss";
 @import "./styles/checkbox.scss";
