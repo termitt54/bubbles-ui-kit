@@ -1,0 +1,42 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  &__input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 115rem;
+    height: 174.9rem;
+    padding: 48px 34px 48px 45px;
+    border: 0.1rem solid $black;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    column-gap: 2rem;
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 115rem;
+    height: 64.5rem;
+    padding: 7.5rem 19.2rem;
+    border: 0.1rem solid $black;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  &__checkbox {
+    width: 100%;
+    max-width: 115rem;
+    height: 64.5rem;
+    padding: 7.5rem 19.2rem;
+    border: 0.1rem solid $black;
+    border-radius: 1rem;
+  }
+}

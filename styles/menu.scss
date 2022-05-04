@@ -1,0 +1,13 @@
+.menu {
+    width: 100%;
+    max-width: 169.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: $bgcolor-nav;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 12rem 10.3rem;
+    gap: 2rem;
+  }

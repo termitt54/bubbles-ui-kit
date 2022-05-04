@@ -118,18 +118,18 @@
       transition: 0.3s ease;
     }
   }
-}
 
-.checkbox__button:checked ~ .checkbox__decorator {
-  border-color: $blue;
-  background-color: $blue;
-}
+  &__button:checked ~ &__decorator {
+    border-color: $blue;
+    background-color: $blue;
+  }
 
-.checkbox__button:disabled ~ .checkbox__label-text,
-.checkbox__button:disabled ~ .checkbox__decorator {
-  opacity: 0.5;
-}
+  &__button:disabled ~ &__label-text,
+  &__button:disabled ~ &__decorator {
+    opacity: 0.5;
+  }
 
-.checkbox__button:checked ~ .checkbox__decorator::before {
-  opacity: 1;
+  &__button:checked ~ &__decorator::before {
+    opacity: 1;
+  }
 }

@@ -31,16 +31,16 @@
       transition: 0.5s;
     }
   }
-}
 
-.switch__button:checked ~ .switch__decorator {
-  background-color: $blue;
-}
+  &__button:checked ~ &__decorator {
+    background-color: $blue;
+  }
 
-.switch__button:disabled ~ .switch__decorator {
-  opacity: 0.5;
-}
+  &__button:disabled ~ &__decorator {
+    opacity: 0.5;
+  }
 
-.switch__button:checked ~ .switch__decorator::before {
-  transform: translateX(2rem);
+  &__button:checked ~ &__decorator::before {
+    transform: translateX(2rem);
+  }
 }

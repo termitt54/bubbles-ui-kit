@@ -1,0 +1,12 @@
+.tab {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 6.8rem 18rem;
+    row-gap: 2rem;
+    column-gap: 3.8rem;
+    margin-bottom: 3rem;
+  }

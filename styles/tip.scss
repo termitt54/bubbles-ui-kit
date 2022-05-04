@@ -1,77 +1,57 @@
-.tooltip {
-  position: relative;
+.tip {
+  width: 100%;
   display: flex;
-  background-color: $white;
-  box-shadow: 0 0 15px $light-black;
-  border-radius: 0.8rem;
-  padding: 0.8rem 1.48rem 0.8rem 1em;
+  justify-content: center;
+  margin-bottom: 3rem;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    transform: translateX(-50%);
-    border: 1rem solid transparent;
-    border-bottom: 1rem solid $white;
-  }
-
-  &_small {
+  &__list {
     display: flex;
-    align-items: center;
-    max-width: 14.8rem;
-    height: 5.4rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 137.8rem;
+    height: 56.7rem;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 8.2rem 17.3rem;
+    gap: 2rem;
   }
 
-  &_wide {
+  &__field {
+    display: flex;
+    flex-wrap: wrap;
     width: 34.3rem;
-    max-height: 7.8rem;
-  }
+    height: 17rem;
+    gap: 1.8rem;
 
-  &_position_bottomLeft {
-    &::before {
-      top: -1.8rem;
-      left: 2.9rem;
+    &_small {
+      width: 29rem;
+      row-gap: 0;
+
+      .tooltip__image {
+        width: 3.8rem;
+      }
     }
-  }
 
-  &_position_bottomCenter {
-    &::before {
-      top: -1.8rem;
-      left: 50%;
+    &_dark {
+      .tooltip {
+        background-color: $dark;
+
+        &__text-title {
+          color: $white;
+        }
+
+        &__text-subtitle {
+          color: $opac-white;
+        }
+
+        &__image {
+          background-color: $dark-gray;
+        }
+
+        &::before {
+          border-bottom: 1rem solid $dark;
+        }
+      }
     }
-  }
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__text-title {
-    font-size: $font-size_5;
-    color: $color-title;
-  }
-
-  &__text-subtitle {
-    font-size: $font-size_11;
-    color: $gray;
-  }
-
-  &__image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 3.8rem;
-    height: 3.8rem;
-    background-color: $default;
-    border-radius: 0.6rem;
-    margin-right: 1.2rem;
-  }
-
-  &__icon {
-    width: 100%;
-    max-width: 1.7rem;
-    max-height: 1.5rem;
-    margin-left: 1rem;
   }
 }

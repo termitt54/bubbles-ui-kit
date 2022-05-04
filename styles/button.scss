@@ -1,125 +1,33 @@
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 34.3rem;
-  max-width: 34.3rem;
-  min-height: 3rem;
-  font-size: $font-size_12;
-  border: none;
-  border-radius: 1rem;
-  padding: 1.4rem;
-  cursor: pointer;
-
-  &:disabled {
-    color: $gray;
-    background-color: $default;
-    pointer-events: none;
-
-    .btn__count {
-      background-color: $medium-black;
-      color: rgba(242, 242, 242, 1);
-    }
-  }
-
-  &_small {
-    min-width: 20rem;
-    max-width: 20rem;
-    padding: 1.4rem 1.35rem;
-  }
-
-  &_mini {
-    min-width: 7.7rem;
-    max-width: 15rem;
-    height: 3rem;
-    padding: 0.5rem;
-    border-radius: 0.6rem;
-    font-size: 1.3rem;
-  }
-
-  &_primary {
-    position: relative;
-    background-color: $blue;
-    color: $white;
-
-    .btn__icon-top {
-      position: absolute;
-      left: 1.4rem;
-    }
-
-    .btn__count {
-      background-color: $white;
-      color: $blue;
-    }
-  }
-
-  &_transparent {
-    background-color: transparent !important;
-    color: $blue;
-
-    .btn__icon-top {
-      margin-right: 0.65rem;
-    }
-
-    .btn__count {
-      background-color: $blue;
-      color: $white;
-    }
-  }
-
-  &_loading {
-    pointer-events: none;
-  }
-
-  &__icon-loading {
-    animation: loader 1s linear infinite;
-  }
-
-  &_default {
-    background-color: $primary;
-    color: $blue;
-
-    .btn__count {
-      background-color: $blue;
-      color: $white;
-    }
-  }
-
-  &_border {
-    border: 1px solid $blue;
-  }
-
-  &__icon-arrow-right {
-    margin-left: 0.6rem;
-  }
-
-  &__icon-plus {
-    margin-right: 0.35rem;
-  }
-
-  &__icon-arrow {
-    margin-left: 0.63rem;
-  }
-
-  &__count {
+.button {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1.4rem;
-    height: 1.4rem;
-    border-radius: 50%;
-    margin-left: 0.3rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    padding: 0.4rem 0.45rem;
+    margin-bottom: 3rem;
+    gap: 2rem;
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      width: 137.8rem;
+      border: 1px solid $black;
+      border-radius: 1rem;
+      padding: 8rem 6.7rem;
+      column-gap: 4rem;
+      row-gap: 3rem;
+  
+      &_mini {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        width: 137.8rem;
+        height: 40.5rem;
+        border: 1px solid $black;
+        border-radius: 1rem;
+        padding: 8.2rem 40rem;
+        column-gap: 4rem;
+      }
+    }
   }
-}
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}

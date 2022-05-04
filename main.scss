@@ -59,14 +59,21 @@ body {
     }
 }
 
-@import "./styles/section.scss";
+@import "./styles/form.scss";
 @import "./styles/input.scss";
 @import "./styles/radio.scss";
 @import "./styles/checkbox.scss";
 @import "./styles/button.scss";
+@import "./styles/btn.scss";
+@import "./styles/pick.scss";
 @import "./styles/picker.scss";
+@import "./styles/tab.scss";
 @import "./styles/tabBar.scss";
 @import "./styles/tip.scss";
+@import "./styles/tooltip.scss";
+@import "./styles/bar.scss";
 @import "./styles/snackbar.scss";
+@import "./styles/menu.scss";
 @import "./styles/navigation.scss";
+@import "./styles/last.scss";
 @import "./styles/switch.scss";

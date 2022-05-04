@@ -18,6 +18,71 @@
     width: 34.3rem;
     flex-wrap: wrap;
     gap: 2rem;
+
+    &:nth-child(2) {
+      .radio__decorator {
+        margin-left: 0;
+        margin-right: 0.8rem;
+      }
+    }
+  }
+
+  &__list-default {
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    width: 10.6rem;
+    height: 10.6rem;
+    border: 1px dashed $blue;
+    border-radius: 1.6rem;
+    padding: 2rem;
+    gap: 2rem;
+
+    .radio {
+      &__button {
+        display: none;
+      }
+
+      &__decorator {
+        position: relative;
+        display: block;
+        border: 2px solid $gray;
+        border-radius: 50%;
+        width: 2.2rem;
+        height: 2.2rem;
+        transition: 0.3s;
+
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 1.4rem;
+          height: 1.4rem;
+          background-color: $blue;
+          border-radius: 50%;
+
+          opacity: 0;
+
+          transition: 0.3s ease;
+        }
+      }
+
+      &__button:checked ~ &__decorator {
+        border-color: $blue;
+      }
+
+      &__button:disabled ~ &__label-text,
+      &__button:disabled ~ &__decorator {
+        opacity: 0.5;
+      }
+
+      &__button:checked ~ &__decorator::before {
+        opacity: 1;
+      }
+    }
   }
 
   &_default {
@@ -76,79 +141,16 @@
     }
   }
 
-  .radio__button:checked ~ .radio__decorator {
+  &__button:checked ~ &__decorator {
     border-color: $blue;
   }
 
-  .radio__button:disabled ~ .radio__label-text,
-  .radio__button:disabled ~ .radio__decorator {
+  &__button:disabled ~ &__label-text,
+  &__button:disabled ~ &__decorator {
     opacity: 0.5;
   }
 
-  .radio__button:checked ~ .radio__decorator::before {
-    opacity: 1;
-  }
-}
-
-.radio__list:nth-child(2) {
-  .radio__decorator {
-    margin-left: 0;
-    margin-right: 0.8rem;
-  }
-}
-
-.radio__list-default {
-  display: flex;
-  align-self: center;
-  flex-wrap: wrap;
-  width: 10.6rem;
-  height: 10.6rem;
-  border: 1px dashed $blue;
-  border-radius: 1.6rem;
-  padding: 2rem;
-  gap: 2rem;
-
-  .radio__button {
-    display: none;
-  }
-
-  .radio__decorator {
-    position: relative;
-    display: block;
-    border: 2px solid $gray;
-    border-radius: 50%;
-    width: 2.2rem;
-    height: 2.2rem;
-    transition: 0.3s;
-
-    &::before {
-      position: absolute;
-      display: block;
-      content: "";
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      width: 1.4rem;
-      height: 1.4rem;
-      background-color: $blue;
-      border-radius: 50%;
-
-      opacity: 0;
-
-      transition: 0.3s ease;
-    }
-  }
-
-  .radio__button:checked ~ .radio__decorator {
-    border-color: $blue;
-  }
-
-  .radio__button:disabled ~ .radio__label-text,
-  .radio__button:disabled ~ .radio__decorator {
-    opacity: 0.5;
-  }
-
-  .radio__button:checked ~ .radio__decorator::before {
+  &__button:checked ~ &__decorator::before {
     opacity: 1;
   }
 }
